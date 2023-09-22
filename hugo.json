@@ -1,0 +1,22 @@
+{
+    "baseURL": "https://mjlee.dev/",
+    "title": "MyungJae Lee",
+    "languageCode": "en-us",
+    "languageLang": "en",
+    "menu": {
+        "main": [
+            {
+                "identifier": "about",
+                "name": "About",
+                "url": "/about/",
+                "weight": 1
+            },
+            {
+                "identifier": "blog",
+                "name": "Blog",
+                "url": "/blog/",
+                "weight": 2
+            }
+        ]
+    }
+}

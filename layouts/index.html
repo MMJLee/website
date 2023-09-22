@@ -1,0 +1,9 @@
+{{ define "main" }}
+<div class="">
+  <h3 class="">{{.Title}}</h1>
+    <div>
+      {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
+      {{ .Content }}
+    </div>
+</div>
+{{ end }}
