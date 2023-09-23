@@ -1,9 +1,12 @@
 {{ define "main" }}
-<div class="">
-  <h3 class="">{{.Title}}</h1>
-    <div>
-      {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
-      {{ .Content }}
-    </div>
-</div>
+<article class="base-article">
+  <section class="base-section">
+    <header class="base-header">
+      <h3 class="base-heading">{{.Title}}</h3>
+    </header>
+    {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
+    {{ .Content }}
+  </section>
+</article>
+
 {{ end }}

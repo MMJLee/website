@@ -1,0 +1,6 @@
+<p><i><time datetime="{{.start}}">{{ time.Format "Jan, 2006" .start }}</time></i></p> -
+{{if .end}}
+<p><i><time datetime="{{.end}}">{{ time.Format "Jan, 2006" .end }}</time></i></p>
+{{else}}
+<p><i>Present</i></p>
+{{end}}

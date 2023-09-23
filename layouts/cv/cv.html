@@ -1,0 +1,42 @@
+{{ define "main" }}
+<article>
+  <section>
+    <header>
+      <h3>Experience</h3>
+    </header>
+    <div>
+      {{ range .Params.experience }}
+      {{ range . }}
+      {{ partial "cv-item.html" . }}
+      {{ end }}
+      <hr />
+      {{ end }}
+    </div>
+  </section>
+  <section>
+    <header>
+      <h3>Education</h3>
+    </header>
+    <div>
+      {{ range .Params.education }}
+      {{ partial "cv-item.html" . }}
+      {{ end }}
+      <hr />
+    </div>
+  </section>
+  <section>
+    <header>
+      <h3>Skills</h3>
+    </header>
+    <div>
+      <ul>
+        {{ range .Params.skills }}
+        <li class="inline-item">{{ . }}</li>
+        {{ end }}
+      </ul>
+      <hr />
+    </div>
+  </section>
+</article>
+
+{{ end }}

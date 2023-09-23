@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="{{ or .Site.LanguageCode .Site.Language.Lang }}">
-{{ partial "base/head.html" . }}
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap">
+  <link rel="stylesheet" href="/style.css">
+  <title> {{ block "title" . }} {{ .Site.Title }} {{ end }} </title>
+</head>
 
 <body>
-  {{ partial "base/nav.html" . }}
+  <header>
+    <nav class="separate">
+      <a class="base-nav-home {{ if eq .Permalink .Site.BaseURL }}active-link{{ end }}" href="{{ .Site.BaseURL }}">mjlee.dev</a>
+      <ul class="base-nav-list">
+        {{ $current := . }}
+        {{ range .Site.Menus.main }}
+        <li class="inline-item {{ if strings.Contains $current.RelPermalink .URL }}active-link{{ end }}">
+          <a href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
+      </ul>
+    </nav>
+  </header>
   <main>
     {{ block "main" . }}
     {{ end }}
   </main>
-  {{ partial "base/footer.html" . }}
+  <footer class="base-footer">
+    <p class="base-footer-copyright"> &copy; {{now.Format "2006"}} {{.Site.Title}}. All Rights Reserved </p>
+  </footer>
 </body>
 
 </html>

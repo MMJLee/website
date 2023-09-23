@@ -1,17 +1,14 @@
 {{ define "main" }}
-<article class="base-article">
-  <header class="base-header">
-    <h3 class="base-heading">{{.Title}}</h3>
-  </header>
+<article>
   <section>
+    <header>
+      <h3>{{.Title}}</h3>
+    </header>
     {{ .Content }}
-    <ul>
-      {{ range .Pages }}
-      <li>
-        <a href="{{ .Permalink }}">{{ .Date.Format "06-01-02" }}, {{ .Title }}</a>
-      </li>
-      {{ end }}
-    </ul>
+    {{ range .Pages }}
+    {{ .Render "summary" }}
+    <hr />
+    {{ end }}
   </section>
 </article>
 {{ end }}

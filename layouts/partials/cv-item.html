@@ -1,0 +1,17 @@
+<div>
+  <header class="separate">
+    <div>
+      <p>{{.title}}</p> - <a href="{{ .url }}" target="_blank">{{ .place }}</a>
+    </div>
+    <div>
+      {{ partial "time-range.html" .}} 
+    </div>
+  </header>
+  <ul>
+    {{ range .content }}
+    <li>
+      - {{ . | markdownify}}
+    </li>
+    {{ end }}
+  </ul>
+</div>

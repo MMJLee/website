@@ -1,14 +1,16 @@
 {{ define "main" }}
-<article class="base-article">
-  <header>
-    <h3>{{.Title}}</h3>
-    {{ partial "post-detail.html" . }}
-
-  </header>
-  <section class="base-section">
+<article>
+  <section>
+    <header>
+      <h3>{{.Title}}</h3>
+      <div class="separate">
+        {{ partial "time.html" .Date }} 
+        <p>Read time: {{ .ReadingTime }} min</p>
+      </div>
+    </header>
+    <hr/>
     {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
     {{ .Content }}
   </section>
 </article>
-
 {{ end }}
