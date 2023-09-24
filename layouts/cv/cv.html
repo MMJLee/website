@@ -6,9 +6,7 @@
     </header>
     <div>
       {{ range .Params.experience }}
-      {{ range . }}
       {{ partial "cv-item.html" . }}
-      {{ end }}
       <hr />
       {{ end }}
     </div>
@@ -20,8 +18,8 @@
     <div>
       {{ range .Params.education }}
       {{ partial "cv-item.html" . }}
-      {{ end }}
       <hr />
+      {{ end }}
     </div>
   </section>
   <section>

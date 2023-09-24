@@ -12,11 +12,11 @@
 <body>
   <header>
     <nav class="separate">
-      <a class="base-nav-home {{ if eq .Permalink .Site.BaseURL }}active-link{{ end }}" href="/">mjlee.dev</a>
+      <a class="base-nav-home {{ if eq .Permalink .Site.BaseURL }}nav-active-link{{ end }}" href="/">mjlee.dev</a>
       <ul class="base-nav-list">
         {{ $current := . }}
         {{ range .Site.Menus.main }}
-        <li class="inline-item {{ if strings.Contains $current.RelPermalink .URL }}active-link{{ end }}">
+        <li class="inline-item {{ if strings.Contains $current.RelPermalink .URL }}nav-active-link{{ end }}">
           <a href="{{ .URL }}">{{ .Name }}</a>
         </li>
         {{ end }}
