@@ -1,3 +1,10 @@
+@font-face {
+  font-display: swap;
+  font-family: "Zilla Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/zilla-slab-v11-latin-regular.woff2") format("woff2");
+}
 :root{
   --text-color: #395144;
   --text-color-secondary:#4E6C50;
@@ -11,7 +18,7 @@ body{
   margin: 0;
   background: var(--background-color);
   color: var(--text-color);
-  font-family: 'Zilla Slab', serif;
+  font-family: "Zilla Slab", serif;
   display: flex;
   flex-direction: column;
 }
