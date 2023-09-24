@@ -14,7 +14,7 @@
 <body>
   <header>
     <nav class="separate">
-      <a class="base-nav-home {{ if eq .Permalink .Site.BaseURL }}active-link{{ end }}" href="{{ .Site.BaseURL }}">mjlee.dev</a>
+      <a class="base-nav-home {{ if eq .Permalink .Site.BaseURL }}active-link{{ end }}" href="/">mjlee.dev</a>
       <ul class="base-nav-list">
         {{ $current := . }}
         {{ range .Site.Menus.main }}

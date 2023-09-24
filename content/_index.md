@@ -6,4 +6,4 @@
 }
 Hi, welcome to my website!
 
-It's built from scratch using [Hugo](https://gohugo.io)
+It's built from scratch using [Hugo](https://gohugo.io).

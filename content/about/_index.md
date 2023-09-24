@@ -15,4 +15,4 @@ Lately I've been studying UI design and have learned that it's very hard to crea
 
 I’m experimenting with Hugo to create simple yet functional and aesthetic websites.
 
-Here's my [Github](https://github.com/mmjlee), [LinkedIn](https://linkedin.com/in/matthewmjlee), and [Resume](https://mjlee.dev/resume.pdf).
+Here's my [Github](https://github.com/mmjlee), [LinkedIn](https://linkedin.com/in/matthewmjlee), and [Resume](/resume.pdf/).
