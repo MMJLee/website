@@ -1,71 +1,98 @@
 @font-face {
   font-display: swap;
-  font-family: "Zilla Slab";
+  font-family: "Cutive Mono";
   font-style: normal;
   font-weight: 400;
-  src: url("/zilla-slab-v11-latin-regular.woff2") format("woff2");
+  src: url("/cutive-mono-v20-latin-regular.woff2") format("woff2");
 }
-:root{
+
+:root {
   --text-color: #395144;
-  --text-color-secondary:#4E6C50;
-  --background-color: #F0EBCE;
-  --background-color-secondary: #AA8B56;
+  --text-color-secondary: #4e6c50;
+  --background-color: #f0ebce;
+  --background-color-secondary: #aa8b56;
   font-size: calc(1rem + 0.5vw);
-  overflow-y: scroll;
+  letter-spacing: -3px;
 }
-body{
+
+body {
   min-height: 100vh;
   margin: 0;
   background: var(--background-color);
   color: var(--text-color);
-  font-family: "Zilla Slab", serif;
+  font-family: "Cutive Mono", monospace;
   display: flex;
   flex-direction: column;
 }
-main{
+
+main {
   padding: 1vw 10vw;
   flex-grow: 1;
 }
-nav{
+
+nav {
   background: var(--background-color-secondary);
   color: var(--background-color);
   align-items: center;
-  padding: 1vw 0;
+  padding: 0.7rem 0;
 }
-ul,p,a {margin: 0;}
-ul {
-  margin-left: 2vw;
-  padding: 0;
-  list-style-type: none;
-  font-size:0.85rem;
-}
-li{margin: 0.15vw 1vw 0.15vw 0;}
-p {display: inline-block;}
-a {
-  display: inline-block;
+
+nav a {
   color: currentColor;
   text-decoration: none;
 }
 
-a:hover {text-decoration: underline;}
-.active-link{color: var(--text-color-secondary);}
-.inline-item{display: inline-block;}
-.separate{
+ul,
+p,
+a {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+p {
+  display: inline-block;
+}
+
+a {
+  text-decoration: underline 1px;
+}
+
+footer {
+  background: var(--background-color-secondary);
+  display: flex;
+  margin-top: 2vw;
+}
+
+.base-nav-home {
+  margin-left: 10vw;
+}
+
+.base-nav-list {
+  margin-right: 10vw;
+}
+
+.base-footer-copyright {
+  margin: auto;
+}
+
+.nav-active-link {
+  color: var(--text-color);
+  font-weight: bold; 
+}
+
+
+.inline-item {
+  display: inline-block;
+  margin-left: 2vw;
+}
+
+.separate {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
 }
-
-
-.base-nav-home{margin-left: 10vw;}
-.base-nav-list{ 
-  margin-right: 10vw;
-  padding: 0;
-}
-footer{
-  background: var(--background-color-secondary);
-  display: flex;
-  margin-top: 2vw;
-}
-.base-footer-copyright{margin: auto;}

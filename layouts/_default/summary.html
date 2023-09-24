@@ -1,13 +1,12 @@
 <article>
   <section>
     <header class="separate">
-      <p style="margin: 0;"> <a href='{{ .Permalink }}'> {{ .Title }}</a> </h4>
-      {{ partial "time.html" .Date }} 
+      <p> <a href='{{ .RelPermalink }}'> {{ .Title }}</a> </p>
+        {{ partial "time.html" .Date }}
     </header>
     <br>
     <summary>
       {{ .Summary }}
     </summary>
-    
   </section>
 </article>

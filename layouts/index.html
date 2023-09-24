@@ -1,8 +1,8 @@
 {{ define "main" }}
-<article class="base-article">
-  <section class="base-section">
-    <header class="base-header">
-      <h3 class="base-heading">{{.Title}}</h3>
+<article>
+  <section>
+    <header>
+      <h3>{{.Title}}</h3>
     </header>
     {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
     {{ .Content }}
