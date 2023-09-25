@@ -10,6 +10,4 @@ Hi, welcome to my website! I built it from scratch using [Hugo](https://gohugo.i
 I'm still figuring out what content to put on this page.  
 &nbsp;
 
-
-
 In the meantime, here's my [Email](mailto:matthewmjlee@gmail.com), [Github](https://github.com/mmjlee), [LinkedIn](https://linkedin.com/in/matthewmjlee), and [Resume](/resume.pdf).  
