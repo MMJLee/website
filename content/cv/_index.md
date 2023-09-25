@@ -2,7 +2,6 @@
    "title": "CV",
    "author": "MyungJae Lee",
    "description": "MyungJae Matthew Lee's curriculum vitae.",
-   "image": "",
    "date": "2023-09-21T16:16:29-05:00",
    "draft": false,
    "experience": [

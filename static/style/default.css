@@ -3,16 +3,19 @@
   font-family: "Cutive Mono";
   font-style: normal;
   font-weight: 400;
-  src: url("/cutive-mono-v20-latin-regular.woff2") format("woff2");
+  src: url("/fonts/cutive-mono-v20-latin-regular.woff2") format("woff2");
 }
 
 :root {
   --text-color: #395144;
-  --text-color-secondary: #4e6c50;
+  --text-color-secondary: #0000EE;
   --background-color: #f0ebce;
-  --background-color-secondary: #aa8b56;
+  --background-color-secondary: #E3CAA5;
   font-size: calc(1rem + 0.5vw);
   letter-spacing: -2px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: var(--text-color) var(--background-color);
 }
 
 body {
@@ -25,6 +28,16 @@ body {
   flex-direction: column;
 }
 
+body::-webkit-scrollbar {
+  width: 9px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--text-color);
+  border-radius: 5px;
+  border: 2px solid var(--background-color);
+}
+
 main {
   padding: 1vw 10vw;
   flex-grow: 1;
@@ -32,14 +45,13 @@ main {
 
 nav {
   background: var(--background-color-secondary);
-  color: var(--background-color);
   align-items: center;
   padding: 0.7rem 0;
 }
 
 nav a {
   color: currentColor;
-  text-decoration: none;
+  font-style: bold;
 }
 
 ul,
@@ -58,7 +70,17 @@ p {
 }
 
 a {
+  text-decoration: none;
+}
+
+a:hover {
   text-decoration: underline 1px;
+}
+
+img {
+  margin: 1vw 2vw;
+  width: 100%;
+  height: auto;
 }
 
 footer {
@@ -80,10 +102,8 @@ footer {
 }
 
 .nav-active-link {
-  color: var(--text-color);
-  font-weight: bold; 
+  font-weight: bold;
 }
-
 
 .inline-item {
   display: inline-block;

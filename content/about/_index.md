@@ -25,4 +25,4 @@ Since then, I’ve continued to develop my skills and experiment with new techno
 
 I now live in the suburbs of Nashville with my girlfriend and two cats.
 
-~15 years ago, I didn't know the alphabet, but I'm now a citizen of the United States of America. Life is weird!
+15 years ago, I didn't know the alphabet. Now, I'm a U.S. citizen. Life is weird!
