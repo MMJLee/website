@@ -2,9 +2,12 @@
    "title": "Building a Blog",
    "author": "MyungJae Lee",
    "description": "MJ's experience building a Hugo website from scratch.",
-   "date": "2023-09-25T16:16:29-05:00",
+   "date": "2023-09-24T16:16:29-05:00",
    "draft": false
 }
+*active blog - will be edited*  
+&nbsp;
+
 I wanted to build a simple, performant blog to document things. This very website was the result of this, and it is built with [Hugo](https://gohugo.io).  
 &nbsp;
 

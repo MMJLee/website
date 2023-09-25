@@ -78,19 +78,24 @@
    "skills": [
       "Python",
       "Spark",
-      "Airflow",
+      "SQL",
       "FastAPI",
+      "Airflow",
       "Java",
       "SpringBoot",
       "Javascript",
+      "Go",
       "Node",
       "Express",
-      "Vue",
-      "AWS (EC2,EMR)",
-      "PostgreSQL",
-      "SQL",
+      "AWS (EC2,EMR,ECR,ECS)",
+      "Postgres",
       "Flyway",
-      "Docker"
+      "Docker",
+      "Git",
+      "Vue",
+      "React",
+      "HTML",
+      "CSS"
    ]
 }
 I prefer working in the backend and enjoy formulating complex SQL queries.  
