@@ -1,6 +1,8 @@
 {
    "title": "CV",
    "author": "MyungJae Lee",
+   "description": "MyungJae Matthew Lee's curriculum vitae.",
+   "image": "",
    "date": "2023-09-21T16:16:29-05:00",
    "draft": false,
    "experience": [
@@ -92,3 +94,6 @@
       "Docker"
    ]
 }
+I prefer working in the backend and enjoy formulating complex SQL queries.  
+Lately I've been reading *Refactoring UI* and have realized that it's very hard to create a good design that isn't modern/minimalistic.  
+I’m experimenting with Hugo to create simple yet functional and aesthetic websites.
